@@ -33,6 +33,7 @@ return parsed;
 }
 
 function preserveDecimal(n) {
-  parseFloat(n);
-  return n;
+var parse = parseFloat(n);
+if (isNaN(parsed)) {return Nan}
+return parse;
 }
